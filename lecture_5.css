@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+div, p, a, input, header, form, img, span {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 52px;
+    font-weight: bold;
+    padding: 0;
+    color: rgba(114, 52, 26, 0.89);
+
+}
+
+.contacts {
+    padding-top: 98px;
+    padding-bottom: 98px;
+    font-weight: 700;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1024px;
+}
+
+.form-left {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.form {
+    width: 601px;
+    box-shadow: 0px 17px 50px rgb(32 40 69 / 14%);
+    border-radius: 20px;
+    text-align: center;
+    padding: 58px 64px 97px;
+    margin: 0 auto;
+}
+
+
+.form h3 {
+    width: 474px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgba(114, 52, 26, 0.89);
+}
+
+
+.form input {
+    width: 473px;
+    border: 1px solid rgba(39, 52, 86, 0.26);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    padding: 19px 26px;
+    margin-bottom: 15px;
+}
+
+
+.form label {
+    width: 367px;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 35px;
+    color: rgba(114, 52, 26, 0.89);
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    background: #FF7D34;
+    border-radius: 69px;
+    color: #fff;
+    width: 470px;
+    padding: 20px 0px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.phone-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+
+.phone-right a {
+    display: block;
+    color: #FF7D34;
+    margin-top: 15px;
+    color: rgba(114, 52, 26, 0.89);
+}
