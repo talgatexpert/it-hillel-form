@@ -6,39 +6,36 @@ $array = [
         "Чай" => "Чай",
         "Молоко" => "Молоко",
         "Колбаса" => "Колбаса",
-        "Хлеб" => "Хлеб"]
+        "Хлеб" => "Хлеб"],
+    "Кофе",
+    "Чай",
+    "Молоко",
+    "Колбаса",
 ];
 
-//$array2 = [
-//    ["Список покупок 2" => "Список покупок2",
-//        "Кофе" => "Кофе",
-//        "Чай" => "Чай",
-//        "Молоко" => "Молоко",
-//        "Колбаса" => "Колбаса",
-//        "Хлеб" => "Хлеб"]
-//];
-
-function generateUl(array $array )
+function generateUl(array $array)
 {
     $arrayKeys = $array[0];
     $html = '<h3>';
-
-    //ul lists-----------------
+//ul lists-----------------
     $html = '<ul>';
-    //prepare keys
+//prepare keys
     foreach ($arrayKeys as $key) {
         $html .= "<li>$key</li>";
         $html .= '<br>';
+        $html = '<h3> Список покупок </h3>';
+        $html .= '<ul>';
+        foreach ($array[0] as $item) {
+            $html .= "<li>$item</li>";
+        }
+        $html .= '</li>';
+        $html .= '<ul>';
+
+        return $html;
     }
-    $html .= '</li>';
-    $html .= '<ul>';
-
-    return $html;
 }
-
 //print_r(generateOl($array));
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -51,7 +48,5 @@ function generateUl(array $array )
 </head>
 <body>
 <?= generateUl($array) ?>
-
-
 </body>
 </html>

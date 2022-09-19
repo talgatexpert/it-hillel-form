@@ -25,6 +25,7 @@
                     <label for="checkbox-2" class="checkbox">Disagree</label>
                     <input type="checkbox" name="var[]" id="checkbox-2" value="checkbox-2">
                     <input type="submit" class="btn">
+<!--                    Простите автодополнение сработало у phpshtorm-->
                 </form>
             </div>
             <div class="phone-right">
