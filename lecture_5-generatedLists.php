@@ -1,43 +1,29 @@
 <?php
-$a = ["Список покупок" => "Список покупок"];
 $array = [
     [
-        "Кофе" => "Кофе",
-        "Чай" => "Чай",
-        "Молоко" => "Молоко",
-        "Колбаса" => "Колбаса",
-        "Хлеб" => "Хлеб"]
+         "Кофе",
+         "Чай",
+        "Молоко",
+     "Колбаса",
+      ]
 ];
 
 
-//$array2 = [
-//    ["Список покупок 2" => "Список покупок2",
-//        "Кофе" => "Кофе",
-//        "Чай" => "Чай",
-//        "Молоко" => "Молоко",
-//        "Колбаса" => "Колбаса",
-//        "Хлеб" => "Хлеб"]
-//];
+
 
 function generateOl(array $array )
 {
-    $arrayKeys = $array[0];
-    $html = '<h3>';
+    $html = '<h3> Список поупок </h3>';
 
-    //ul lists-----------------
-    $html = '<ul>';
-    //prepare keys
-    foreach ($arrayKeys as $key) {
-        $html .= "<li>$key</li>";
-        $html .= '<br>';
+    $html .= '<ul>';
+    foreach ($array[0] as $item) {
+        $html .= "<li>$item</li>";
     }
-    $html .= '</li>';
     $html .= '<ul>';
 
     return $html;
 }
 
-//print_r(generateOl($array));
 ?>
 
 <!doctype html>
