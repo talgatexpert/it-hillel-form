@@ -9,7 +9,6 @@ $array = [
         "Хлеб" => "Хлеб"]
 ];
 
-
 //$array2 = [
 //    ["Список покупок 2" => "Список покупок2",
 //        "Кофе" => "Кофе",
@@ -19,7 +18,7 @@ $array = [
 //        "Хлеб" => "Хлеб"]
 //];
 
-function generateOl(array $array )
+function generateUl(array $array )
 {
     $arrayKeys = $array[0];
     $html = '<h3>';
@@ -51,7 +50,7 @@ function generateOl(array $array )
 
 </head>
 <body>
-<?= generateOl($array) ?>
+<?= generateUl($array) ?>
 
 
 </body>
