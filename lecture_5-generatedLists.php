@@ -1,40 +1,32 @@
 <?php
-$a = ["Список покупок" => "Список покупок"];
+
 $array = [
-    [
-        "Кофе" => "Кофе",
-        "Чай" => "Чай",
-        "Молоко" => "Молоко",
-        "Колбаса" => "Колбаса",
-        "Хлеб" => "Хлеб"],
     "Кофе",
     "Чай",
     "Молоко",
     "Колбаса",
 ];
-
-function generateUl(array $array)
+//, string $header, string $type
+function generateUl(array $array, $type = "ul", $header = null  )
 {
-    $arrayKeys = $array[0];
-    $html = '<h3>';
-//ul lists-----------------
-    $html = '<ul>';
-//prepare keys
-    foreach ($arrayKeys as $key) {
-        $html .= "<li>$key</li>";
-        $html .= '<br>';
-        $html = '<h3> Список покупок </h3>';
-        $html .= '<ul>';
-        foreach ($array[0] as $item) {
-            $html .= "<li>$item</li>";
-        }
-        $html .= '</li>';
-        $html .= '<ul>';
+    $html = '';
 
-        return $html;
-    }
+    if (!is_null($header)){
+    $html .= '<h3>' . $header. '</h3>';
 }
+    $html .= '<'. $type .'>';
+    foreach ($array as $item) {
+        $html .= "<li>$item</li>";
+        $html .= "<br>";
+    }
+    $html .= '<' . $type .'>';
+
+    return $html;
+}
+
 //print_r(generateOl($array));
+//print_r(generateUl($array,'ul', 'Список покупок'));
+//'Список покупок', 'ul'
 ?>
 <!doctype html>
 <html lang="en">
@@ -47,6 +39,6 @@ function generateUl(array $array)
 
 </head>
 <body>
-<?= generateUl($array) ?>
+<?= generateUl($array,'ul', 'Список покупок') ?>
 </body>
 </html>
